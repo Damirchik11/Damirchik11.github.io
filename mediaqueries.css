@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+#mobile-nav {
+    display: none;
+}
+

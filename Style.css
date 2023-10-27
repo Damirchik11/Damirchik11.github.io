@@ -1,0 +1,360 @@
+/* Styling */
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+/*Background color*/
+*{
+    background-color: #fde5cb;
+}
+
+/*Margins*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Body Font*/
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Scroll Behavior*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*!!!Adjust Later!!*/
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITIONS */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* NAVIGATION */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    text-decoration-color: whitesmoke;
+}
+
+a:hover {
+    color:dimgrey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color:#d0bdf4;
+}
+
+
+.Logo {
+    font-size: 2rem;
+}
+
+.Logo:hover {
+    cursor: default;
+}
+
+
+/* Mobile Menu */
+
+#mobile-nav {
+    visibility: hidden;
+}
+
+.mobile-menu {
+    position: relative;
+    display: none;    
+}
+
+.mobile-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.mobile-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.meni-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;;
+}
+/* Sections */
+
+section {
+    padding-top: 5vh;
+    height: 95vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTIONS */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+}
+
+
+.section_pic-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 800px;
+    width: 800px;
+    margin: auto auto;
+    float: right;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 800;
+}
+
+.section__text__p1 {
+    text-align: center;
+    font-size: x-large;
+}
+.section__text__p2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+    .icon {
+        cursor: pointer;
+        height: 5rem;
+    }
+
+
+/*Buttons*/
+.btn-container {
+    display:flex;
+    justify-content:center;
+    gap: 1rem;
+    height: 100px;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+/*ADJUST COLOR*/
+.btn-color-1,
+.btn-color-2 {
+    border: #d0bdf4 0.2rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+    background-color:#e5eaf5;       /*Color Name:Freeze Purple*/
+    color:#8458B3;      /*Color Name:Purple Pain*/
+    border:#a0d2eb 0.2rem solid;        /*Color Name: Ice Cold*/
+}
+
+.btn-container {
+    gap:1rem;
+}
+
+
+/* About Section */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: #fde5cb;
+    border-radius: 2rem;
+    border: #a0d2eb 0.2rem solid;
+    border-color: #d0bdf4;
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 250px;
+    width: 400px;
+    margin: auto 0;
+}
+
+
+
+
+/* Skills Section */
+
+#skills {
+    position: relative;
+}
+
+.skills-sub-title {
+    color: black;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skills-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 15rem;
+    justify-content: space-around;
+    gap: 0.75rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+
+
+/* Projects */
+/* Projects */
+/* Projects */
+/* Projects */
+/* Projects */
+/* Projects */
+
+
+
+/* Contacts Section */
+
+#Contact {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+}
+
+.contact-info-upper-container {
+    display:flex;
+    justify-content: center;
+    border-radius: 3rem;
+    border:#a0d2eb;
+    border-color:#d0bdf4;
+    background: #fde5cb;
+    margin:2rem auto;
+    padding: 2rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor:default;
+    height: 2rem;
+}
