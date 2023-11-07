@@ -2,335 +2,343 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=egde"/>
+    <meta http-equiv="X-UA_Compatible" content = "IE=egde"/>
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>Damir's Portfolio</title>
     <link rel = "stylesheet" href = "style.css" />
     <link rel = "stylesheet" href = "mediaqueries.css" />
+    <!-- Fonts Import Command -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code&family=Roboto+Condensed&display=swap');
+    </style>
 </head>
+
 <body>
-    <nav id = "desktop-nav">
-        <div class = "Logo">Damir's Portfolio</div>
-        <div>
-            <ul class = "nav-links">
-                <li><a href = "#about">About</a></li>
-                <li><a href = "#skills">Skills</a></li>
-                <li><a href = "#project">Project</a></li>
-                <li><a href = "#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav id="desktop-nav">
+      <div class = "logo">My Portfolio</div>
+      <div>
+        <ul class = "nav-links">
+          <li><a href = "#about">About</a></li>
+          <li><a href = "#experience">Experience</a></li>
+          <li><a href = "#projects">Projects</a></li>
+          <li><a href = "#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    
-    <nav id="mobile-nav">
-        <div class = "Logo">Damir Kozhamkulov</div>
-        <div class = "mobile-menu">
-            <div class = "mobile-icon" onclick = "toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class = "menu-links">
-                <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
-                <li><a href = "#skills" onclick = "toggleMenu()">Skills</a></li>
-                <li><a href = "#project" onclick = "toggleMenu()">Project</a></li>
-                <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
-            </div>
+    <nav id = "hamburger-nav">
+      <div class = "logo">Damir</div>
+      <div class = "hamburger-menu">
+        <div class = "hamburger-icon" onclick = "toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    
+        <div class = "menu-links">
+          <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
+          <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
+          <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
+          <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
-    <section id="Profile">
-        <div class="section_pic-container">
-            <img 
-            src="./Assets/Little_Damirchik.png" 
-            alt="Damir Kozhamkulov Profile Picture"
-            >
+    <section id = "profile">
+      <div class = "section__pic-container">
+        <img src = "./Assets/Little_Damir.png" alt = "Little Damir" />
+      </div>
+      <div class = "section__text">
+        <p class = "section__text__p1">Hi, my name is</p>
+        <h1 class = "title">Damir Kozhamkulov</h1>
+        <p class = "section__text__p2">I am a <br>Software Engineer</p>
+        <div class = "btn-container">
+          <button
+            class = "btn btn-color-2"
+            onclick = "window.open('./Assets/Damir_Kozhamkulov Resume.pdf')"
+          >
+            My Resume
+          </button>
+          <button class = "btn btn-color-1" onclick = "location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        
-        <div class = "section__text">
-            <p class = "section__text__p1">Hello, my name is</p>
-            <h1 class = "title">Damir Kozhamkulov</h1>
-            <p class = "section__text__p2">Software Engineer</p>
-        
-        <div class="btn-container">
-                <button 
-                class="btn btn-color-1" 
-                onclick="window.open('Assets/Damir_Kozhamkulov Resume.pdf')">
-                My Resume
-                </button>
-
-                <button 
-                class="btn btn-color-2" 
-                onclick="location.href='./#contact'">
-                Contact Me
-                </button>
-        </div>
-
-        
         <div id = "socials-container">
-            <img src = "./Assets/linkedin.png" 
-                alt = "Damir's LinkedIn profile"
-                class = "icon" 
-                onclick = "location.href='https://www.linkedin.com/in/damir-kozhamkulov/'"
-            />
+          <img
+            src = "./Assets/LinkedIn Logo.png"
+            alt = "My LinkedIn profile"
+            class = "icon"
+            onclick = "location.href='https://www.linkedin.com/in/damir-kozhamkulov/'"
+          />
+          <img
+            src = "./Assets/github.png"
+            alt = "My Github profile"
+            class = "icon"
+            onclick = "location.href = 'https://github.com/Damirchik11'"
+          />
         </div>
-            
-        <div id = "socials-container">
-            <img
-                src = "./Assets/github.png"
-                alt = "Damir's GitHub Profile"
-                class = "icon"
-                onclick = "location.href = 'https://github.com/Damirchik11'"
-            />
-        </div>
-    </div>
-    
+      </div>
     </section>
-    <section id="about">
-        <p class = "section__text__p1">Find out more</p>
-        <h1 class = "title">About Me</h1>
-        <div class = "section-container">
-            <div class = "section__pic-container">
-                <img 
-                src = "./Assets/Unity Logo.png" 
-                alt = "Unity Logo"
-                class = "about-pic"
+    <section id = "about">
+      <p class = "section__text__p1">Get To Know More</p>
+      <h1 class = "title">About Me</h1>
+      <div class = "section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Assets/skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Soft Skills</h3>
+              <p>Analytical thinking <br> Problem solving <br> Excelent communications skills. <br> Passionate about learning</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree from <br> California State University Northridge</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! my name is Damir, 
+              I am an aspiring Software Engineer specializing in creating efficient, user-based solutions. 
+              With a Bachelor’s degree in Computer Science from California State University Northridge, 
+              I have honed my skills in a range of programming languages and development methodologies.
+              In my personal projects I have used languages like Python, Java, JavaScript, C++, Prolog, etc. 
+              And I partiipated in group projects utilizing different development methodologies such as Agile.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineering</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/Python-logo.png"
+                  alt="Experience icon"
+                  class="icon"
                 />
-            </div>
-            <div class = "about-details-container">
-                <div class = "about-containers">
-                    <div class = "details-container">
-                        <img 
-                        src = "./Assets/skills.png" 
-                        alt="Skills Icon"
-                        class = "icon"
-                        />
-                        <h3>Skills</h3>
-                        <p>Proficient with C++, Java, and Python<br /> Adept with C# <br /> Experienced with engines such as Unity, Unreal Engine, Game Maker, etc.</p>
-                    </div>
-                    <div class = "details-container">
-                        <img 
-                        src = "./Assets/education.png" 
-                        alt="Education Icon"
-                        class = "icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Bachelor of Computer Science <br /> Graduate of: <br /> California State University Northidge</p>
-                    </div>
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class = "text-container">
-                    <p>
-                        My journey through the world of web development has equipped me with a diverse skill set, ranging from HTML, CSS, and JavaScript for responsive user interface design, to mastering server-side technologies like Node.js, Express, and databases such as MongoDB and SQL.
-                    </p>
+              </article>
+              <article>
+                <img
+                  src="./Assets/java-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/CSharp-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C Sharp</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/JavaScript-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/CSS-logo-transparent.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/prolog-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prolog</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Developer's Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/Unity Logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/Node.js_logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NodeJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/React-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/Git-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/Jira-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jira</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img 
-        src="./Assets/arrow.png" 
+      </div>
+      <img
+        src="./assets/arrow.png"
         alt="Arrow icon"
-        class = "icon arrow"
-        onclick = "location.href = './#skills'"
-        />
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-    <section id = "skills">
-        <p class = "section__text__p1">Explore My</p>
-        <h1 class = "title">Skills</h1>
-        <div class = "skills-details-container">
-            <div class = "about-containers">
-                <div class="details-container">
-                    <h2 class = "skills-sub-title">Full-Stack Development</h2>
-                    <div class = "article-container">
-                        <article>
-                            <img
-                            src = "./Assets/checkmark.png" 
-                            alt = "Skills icon"
-                            class = "icon"
-                            />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Fluent</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src = "./Assets/checkmark.png" 
-                            alt = "Skills icon"
-                            class = "icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Fluent</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src = "./Assets/checkmark.png" 
-                            alt = "Skills icon"
-                            class = "icon"
-                            />
-                            <div>
-                                <h3>C++</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src = "./Assets/checkmark.png" 
-                            alt = "Skills icon"
-                            class = "icon"
-                            />
-                            <div>
-                                <h3>C#</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src = "./Assets/checkmark.png" 
-                            alt = "Skills icon"
-                            class = "icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src = "./Assets/checkmark.png" 
-                            alt = "Skills icon"
-                            class = "icon"
-                            />
-                            <div>
-                                <h3>Prolog</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Game Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img
-                            src="./Assets/checkmark.png" 
-                            alt="Skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Unity</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="./Assets/checkmark.png" 
-                            alt="Skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Unreal Engine 5</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="./Assets/checkmark.png" 
-                            alt="Skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>GameMaker</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img
-                            src="./Assets/checkmark.png" 
-                            alt="Skills icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Godot Engine</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img 
-        src="./Assets/arrow.png" 
-        alt="Arrow icon"
-        class = "icon arrow"
-        onclick = "location.href = './#projects'"
-        />
-    </section>
-    
-     
     <section id="projects">
-        <p class="section__text__p1">View My</p>
-        <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-            <div class="details-container color-container">
-                
-                <div class="article-container">
-                    <h2>Airline Reservation Software</h2>
-                    <p>Worked with a team of four people to build and implement an airline reservation system</p>
-                </div>
-                <div class = "article-container">
-                    <h1>Graviteer</h1>
-                    <p>Custom gravity based game built with Unity</p>
-                </div>
-                <div class = "article-container">
-                    <h1>Website Portfolio</h1>
-                    <p>Custom Portfolio built with HTML, CSS, and JavaScript</p>
-                </div> 
-                
-            </div>
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Qatar Airlines</h2>
+            <h1>Description:</h1>
+            <p>This is an Airline Reservation System inspired by Qatar Airways. A functioning airline reservation system that lets the user search for flights, book and cancel them, choose seats and fully go through the reservation process. <br> We used JavaScript, SceneBuilder, JUnit 5 testing, etc. to accomplish this goal.</p>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Graviteer</h2>
+            <h1>Description:</h1>
+            <p>Graviteer is a gravity based 2D platformer, I am working in a team of give to make this game that is heavily inspired by industry giants like Celeste and Hollow Knight. <br> For this game we are using Unity as our engine, and coding it in C Sharp. We want to focus on making a custom user controller to guarantee a satisfying playthrough.</p>
+          </div>
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Netflix Clone</h2>
+            <h1>Description:</h1>
+            <p>Coming soon, I took on this project in order to solidify my skills with HTML and CSS. <br> This will be a responsive design that emulates Netflix's mobile application.</p>
+          </div>
         </div>
-    </section>
-    
-        <img
-        src="Assets/arrow.png"
+      </div>
+      <img
+        src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
-        />
-
-    <section id="Contact">
-        <p class = "section__text__p1">Get in Touch</p>
-        <h1 class = "title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img 
-                src="./Assets/email.png" 
-                alt="email icon"
-                class="icon contact-icon"
-                />
-                <p><a href="mailto:damir.kozhamkulov2@gmail.com">damir.kozhamkulov2@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img
-                  src="./assets/linkedin.png"
-                  alt="LinkedIn icon"
-                  class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/damir-kozhamkulov/">LinkedIn</a></p>
-            </div>
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:damir.kozhamkulov2@gmail.com">damir.kozhamkulov2@gmail.com</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./Assets/LinkedIn Logo.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/damir-kozhamkulov/">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </footer>
-    <script src = "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
