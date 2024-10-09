@@ -430,3 +430,5 @@
   footer p {
     text-align: center;
   }
+
+  @media (max-width: 1231px) {}
