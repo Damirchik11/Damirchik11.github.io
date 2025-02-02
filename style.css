@@ -430,3 +430,48 @@
   footer p {
     text-align: center;
   }
+
+  /* Adding responsiveness to the website*/
+  @media (min-width: 1500px) {
+    .logo {
+      font-size: 3rem;
+    }
+    .nav-links {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 1231px) {  
+    .logo {
+      font-size: 2rem;
+    }
+    .nav-links {
+      font-size: 1rem;
+    }
+  }
+
+  /* Responsiveness for Mobile Devices */
+  @media (max-width: 925px) {
+    .logo {
+      padding-left: 40px;
+      padding-top: 40px;
+      font-size: ;
+    }
+
+    .nav-links,
+    .logo {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links,
+    .logo {
+      flex: 0 1 auto;
+    }
+
+    .hamburger-menu {
+      display: flex;
+    }
+
+
+  }
