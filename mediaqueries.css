@@ -1,11 +1,112 @@
-@media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: block;
-        cursor: pointer;
+@media (min-width: 768px) {
+    body {
+      font-size: 200%;
     }
-}
+} 
+@media (max-width: 768px) {
+    body {
+      font-size: 90%; /* Reduce font size to 90% of original */
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 90%; /* Reduce heading size */
+    }
+  
+    .nav-links li a {
+      font-size: 0.9rem; /* Slightly smaller links */
+    }
+  
+    .title {
+      font-size: 2.5rem; /* Smaller titles for tablet */
+    }
+  
+    .section__text__p1 {
+      font-size: 1.1rem; /* Reduce the paragraph size */
+    }
+  
+    .icon {
+      width: 32px; /* Smaller icons for tablets */
+      height: 32px;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    #desktop-nav {
+      display: none; /* Hide desktop nav */
+    }
+  
+    #hamburger-nav {
+      display: block; /* Show hamburger nav */
+    }
+  
+    .section-container {
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .details-container {
+      width: 100%; /* Full width for each container */
+      margin-bottom: 20px; /* Add spacing between them */
+    }
+  }
+  
 
-#mobile-nav {
-    display: none;
-}
-
+  @media (max-width: 480px) {
+    body {
+      font-size: 80%; /* Reduce font size to 80% of original */
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 80%; /* Reduce heading size */
+    }
+  
+    .nav-links li a {
+      font-size: 0.8rem; /* Smaller navigation links */
+    }
+  
+    .title {
+      font-size: 2rem; /* Smaller titles for mobile */
+    }
+  
+    .section__text__p1 {
+      font-size: 1rem; /* Even smaller paragraph text */
+    }
+  
+    .icon {
+      width: 24px; /* Icons become smaller */
+      height: 24px;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    #desktop-nav {
+      display: none; /* Desktop navigation stays hidden */
+    }
+  
+    #hamburger-nav {
+      display: block; /* Mobile navigation is visible */
+    }
+  
+    .section-container {
+      flex-direction: column; /* Stack all sections vertically */
+    }
+  
+    .details-container {
+      width: 100%; /* Full width */
+      margin-bottom: 15px; /* Add spacing */
+    }
+  
+    .btn-container {
+      display: flex;
+      flex-direction: column; /* Stack buttons */
+    }
+  
+    .btn {
+      margin-bottom: 10px; /* Add space between buttons */
+    }
+  }
