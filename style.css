@@ -16,6 +16,13 @@
     font-family: 'Roboto Condensed', sans-serif;
   }
 
+  .container {
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    border: 2px solid;
+  }
+
   #desktop-nav {
     font-family: 'Bebas Neue', sans-serif;
   }
@@ -455,7 +462,7 @@
     .logo {
       padding-left: 40px;
       padding-top: 40px;
-      font-size: ;
+      font-size: 2rem;
     }
 
     .nav-links,
@@ -475,3 +482,5 @@
 
 
   }
+
+  /*margin: 0 auto; TO CENTER DIV 
