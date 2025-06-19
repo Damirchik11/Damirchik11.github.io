@@ -34,14 +34,6 @@
       padding: 0.6rem 1.2rem;
     }
   
-    #desktop-nav {
-      display: none; /* Hide desktop nav */
-    }
-  
-    #hamburger-nav {
-      display: block; /* Show hamburger nav */
-    }
-  
     .section-container {
       flex-direction: column; /* Stack elements vertically */
     }
@@ -136,11 +128,11 @@
     gap: 2rem;
     align-items: center;
   }
-  .pic-container,
-  .section_pic-container {
-    width: 90vw;
+  .pic-container {
+    width: 20vw;
     max-width: 350px;
-    height: auto;
+    height: 40vw;
+    max-height: 500px;
   }
   .text {
     padding-right: 0;
@@ -211,7 +203,7 @@
   #socials-container {
     gap: 0.5rem;
   }
-  
+
   .details-container {
     padding: 1rem;
     width: 100%;
