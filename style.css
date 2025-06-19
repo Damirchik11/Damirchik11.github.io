@@ -174,28 +174,28 @@ section {
   height: 80vh;
 }
 
-.section__pic-container {
+.pic-container {
   display: flex;
   height: 450px;
   width: 400px;
   margin: auto 0;
 }
 
-.section__text {
+.text {
   align-self: center;
   text-align: center;
   padding-right: 350px;
 }
 
-.section__text p {
+.text p {
   font-weight: 600;
 }
 
-.section__text__p1 {
+.text__p1 {
   text-align: center;
 }
 
-.section__text__p2 {
+.text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -281,12 +281,6 @@ section {
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
-}
-
-.section_pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
@@ -450,13 +444,13 @@ footer p {
     gap: 2rem;
     align-items: center;
   }
-  .section__pic-container,
+  .pic-container,
   .section_pic-container {
     width: 90vw;
     max-width: 350px;
     height: auto;
   }
-  .section__text {
+  .text {
     padding-right: 0;
   }
   #profile {
@@ -497,13 +491,13 @@ footer p {
     gap: 1rem;
     align-items: center;
   }
-  .section__pic-container,
+  .pic-container,
   .section_pic-container {
     width: 90vw;
     max-width: 250px;
     height: auto;
   }
-  .section__text {
+  .text {
     padding-right: 0;
     font-size: 1rem;
   }
@@ -546,15 +540,5 @@ footer p {
   footer {
     height: auto;
     margin: 1rem 0.5rem;
-  }
-}
-
-/* Show hamburger menu on mobile */
-@media (max-width: 925px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: block;
   }
 }
