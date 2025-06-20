@@ -1,3 +1,70 @@
+@media (min-width: 1200px) {
+  html {
+    font-size: 26px;
+  }
+  .container {
+    width: 75%;
+    max-width: 1800px;
+    padding: 3rem;
+  }
+  section {
+    margin: 0 22rem;
+    padding-top: 8vh;
+    min-height: 85vh;
+  }
+  .section-container {
+    gap: 8rem;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .text__p2 {
+    font-size: 2.75rem;
+  }
+  .logo {
+    font-size: 5rem;
+  }
+  .nav-links {
+    font-size: 2.5rem;
+    gap: 4rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    padding: 1.75rem;
+    width: 13rem;
+  }
+  .pic-container {
+    height: 1300px;
+    width: 1150px;
+  }
+  .text {
+    padding-right: 600px;
+    font-size: 1.5rem;
+  }
+  .about-containers {
+    gap: 4rem;
+  }
+  .details-container {
+    padding: 3.5rem;
+    font-size: 1.5rem;
+  }
+  .project-title {
+    font-size: 2.5rem;
+  }
+  .contact-info-container p {
+    font-size: 2.5rem;
+  }
+  .email-icon {
+    height: 3.5rem;
+  }
+  footer {
+    height: 18vh;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
     body {
       font-size: 200%;
