@@ -1,8 +1,19 @@
 /* Styling */
+/* --tea-green: #ccd5aeff;
+--beige: #e9edc9ff;
+--cornsilk: #fefae0ff;
+--papaya-whip: #faedcdff;
+--buff: #d4a373ff; */
 
+
+/* --davys-gray: #595959ff;
+--gray: #7f7f7fff;
+--silver: #a5a5a5ff;
+--silver-2: #ccccccff;
+--white-smoke: #f2f2f2ff; */
 /* Background color and box model */
 * {
-  background-color: #fde5cb;
+  background-color: #d4a373ff;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,10 +36,28 @@ body {
 /* Navigation */
 #desktop-nav {
   font-family: 'Bebas Neue', sans-serif;
+  background-color: #ccd5aeff;
+}
+
+#desktop-nav ul {
+  background-color: #ccd5aeff;
 }
 
 #profile {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Ensure nav-links li and a have the correct background */
+#desktop-nav .nav-links li {
+  background-color: #ccd5aeff !important;
+
+}
+
+#desktop-nav .nav-links li a {
+  background-color: #ccd5aeff !important;
+  display: block; 
+  font-size: 4rem;
+  padding: 0.5rem 1.5rem;
 }
 
 /* Scroll Behavior */
@@ -49,7 +78,8 @@ a,
 
 /* DESKTOP NAV */
 nav,
-.nav-links {
+.nav-links,
+li {
   display: flex;
 }
 
@@ -79,6 +109,7 @@ a:hover {
 
 .logo {
   font-size: 3rem;
+  background-color: #ccd5aeff;
 }
 
 .logo:hover {
@@ -184,7 +215,10 @@ section {
 .text {
   align-self: center;
   text-align: center;
-  padding-right: 350px;
+  background-color: #ccd5aeff;
+  border-radius: 2rem;      /* Optional: for a rounded look */
+  padding: 2rem;            /* Optional: for spacing inside the box */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06); /* Optional: subtle shadow */
 }
 
 .text p {
@@ -192,6 +226,7 @@ section {
 }
 
 .text__p1 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -209,8 +244,12 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  gap: 2.5rem;
-  transform: scale(1.5);
+  gap: 2.5rem;          /* Increased gap between icons */
+  transform: scale(2);  /* Make the icons and container appear bigger */
+  width: 200px;         /* Reduced width for a tighter box */
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ICONS */
@@ -236,15 +275,16 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #d0bdf4 0.2rem solid;
+  border: #e9edc9ff 0.4rem solid;
+  background-color: #e9edc9ff;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-  background-color: #e5eaf5;
-  color: #8458B3;
-  border: #a0d2eb 0.2rem solid;
+  background-color: #ccd5aeff;
+  color: #dee2e6ff;;
+  border: #93C572 0.4rem solid;
 }
 
 /* ABOUT SECTION */
@@ -394,5 +434,14 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.text,
+.text * {
+  background-color: transparent !important;
+}
+
+.text {
+  background-color: #ccd5aeff !important;
 }
 
