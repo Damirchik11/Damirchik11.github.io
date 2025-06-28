@@ -12,13 +12,28 @@ body {
   overflow: scroll;
 }
 
-.site-container {
-  max-width: 1920px;
-  margin: 0 auto;
-  width: 100%;
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Top Navigation Bar*/
+/* Text color */
+p {
+  color: #14213d;
+}
+
+/* TRANSITION */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+#profile {
+  font-family: 'Roboto Condensed', sans-serif;
+   justify-content: flex-start;
+}
+
+/* DESKTOP STYLES*/
 #desktop-nav {
   font-family: 'Bebas Neue', sans-serif;
   background-color: rgba(204, 213, 174, 0.85);
@@ -32,53 +47,34 @@ body {
   height: 10vh;
   min-height: 60px;
   backdrop-filter: blur(4px);
+  color: #14213d;
 }
 
 #desktop-nav .logo {
-  font-size: 10rem;
+  font-size: 12rem;
   background-color: transparent;
+  padding-left: 20rem;
 }
 #desktop-nav .logo:hover {
   cursor: default;
+  color: #fefae0ff;
 }
-#desktop-nav .nav-links li {
-  list-style: none;
-} 
 
-#profile {
-  font-family: 'Roboto Condensed', sans-serif;
-   justify-content: flex-start;
+#desktop-nav .nav-links {
+  list-style: none;
+  background-color: rgba(204, 213, 174, 0.85) !important;
+  backdrop-filter: blur(4px);
+  padding-right: 10rem;
 }
 
 #desktop-nav .nav-links li a {
   display: block;
-  font-size: 4rem;
-  padding: 0.5rem 1.5rem; 
-}
-
-#desktop-nav .nav-links,
-#desktop-nav .nav-links li a {
+  font-size: 8rem;
+  padding: 0.5rem 1.5rem;
   background-color: rgba(204, 213, 174, 0.85) !important;
   backdrop-filter: blur(4px);
 }
 
-/* Scroll Behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Text color */
-p {
-  color: rgb(85, 85, 85);
-}
-
-/* TRANSITION */
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
-/* DESKTOP NAV */
 nav,
 .nav-links,
 li {
@@ -100,7 +96,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: #14213d;
   text-decoration: none;
 }
 
@@ -111,7 +107,7 @@ a:hover {
   text-decoration-color: #fefae0ff;
 } 
 
-/* HAMBURGER MENU */
+/* HAMBURGER MENU 
 #hamburger-nav {
   display: none;
 }
@@ -176,11 +172,11 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
-}
+} */
 
 /* SECTIONS */
 section {
-  padding-top: 8vh; /* Increase if needed to match nav height */
+  padding-top: 8vh;
   height: auto;
   margin: 0 10rem;
   min-height: fit-content;
@@ -199,7 +195,7 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 5rem;
-  height: 80vh;
+  height: 70vh;
 }
 
 .pic-container {
@@ -208,10 +204,10 @@ section {
   justify-content: flex-start;
   margin: auto 0;
   margin-left: 0;
-  /* Remove any centering or large fixed width if present */
 }
 
-.text {
+.text,
+.intro_box_1 {
   text-align: center;
   background-color: #ccd5aeff !important;
   border: 0.4rem solid #f2f2f2ff;
@@ -223,34 +219,18 @@ section {
   max-width: 1500px;
 }
 
-.intro_box_1 {
-  text-align: center;
-  background-color: #ccd5aeff !important;
-  border: 0.4rem solid #f2f2f2ff;
-  border-radius: 2rem;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  align-self: flex-start;
-  margin-top: 10vh;
-}
-
 .text p {
   font-weight: 600;
 }
 
 .text__p1 {
-  font-size: 2rem;
+  font-size: 6rem;
   text-align: center;
 }
 
 .description_box {
   font-size: 2rem;
   text-align: center;
-}
-
-.text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
 }
 
 .title {
@@ -461,12 +441,5 @@ footer p {
 
 .text {
   background-color: #ccd5aeff !important;
-}
-
-.intro_box_1 * {
-  background-color: transparent !important;
-  max-width: 1500px;
-  text-align: left;
-  
 }
 

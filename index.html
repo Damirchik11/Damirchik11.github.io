@@ -15,160 +15,152 @@
 </head>
 
 <body>
-    <div class="site-container">
-      <nav id="desktop-nav">
-        <div class = "logo">My Portfolio</div>
-        <div>
-          <ul class = "nav-links">
-            <li><a href = "#about">About</a></li>
-            <li><a href = "#experience">Experience</a></li>
-            <li><a href = "#projects">Projects</a></li>
-            <li><a href = "#contact">Contact</a></li>
+    <nav id="desktop-nav">
+      <div class = "logo">My Portfolio</div>
+      <div>
+        <ul class = "nav-links">
+          <li><a href = "#about">About</a></li>
+          <li><a href = "#experience">Experience</a></li>
+          <li><a href = "#projects">Projects</a></li>
+          <li><a href = "#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id = "hamburger-nav">
+      <div class = "logo">My Portfolio</div>
+      <div class = "hamburger-menu">
+        <div class = "hamburger-icon" onclick = "toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class = "menu-links">
+          <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
+          <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
+          <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
+          <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id = "profile">
+      <div class = "pic-container">
+        <img src = "./Assets/Little_Damir.png" alt = "Little Damir" />
+      </div>
+  
+      <div class = "text">
+        <p class = "text__p1">Hey, my name is Damir. I'm mastering in Data Science at CSUN. blalbalbalblablalbalbalblablalbalbalblablab</p>
+        <h1 class = "title">.</h1>
+        <div class = "btn-container">
+          <button
+            class = "btn btn-color-2"
+            onclick = "window.open('./Assets/Damir_Kozhamkulov_Resume.pdf')"
+          >
+            My Resume
+          </button>
+          <button class = "btn btn-color-1" onclick = "location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id = "socials-container">
+          <img
+            src = "./Assets/LinkedIn Logo.png"
+            alt = "My LinkedIn profile"
+            class = "icon"
+            onclick = "location.href='https://www.linkedin.com/in/damir-kozhamkulov/'"
+          />
+          <img
+            src = "./Assets/github.png"
+            alt = "My Github profile"
+            class = "icon"
+            onclick = "location.href = 'https://github.com/Damirchik11'"
+          />
+        </div>
+      </div>
+
+      <div class = "intro_box_1">
+        <p class = "text__p1">More stuff,more yapping yappa yappa yappa yappayappa yapp</p>
+        <h1 class = "title">.</h1>
+      </div>
+
+    </section>
+    <section id = "about">
+      <p class = "text__p1">Get To Know More</p>
+      <h1 class = "title">About Me</h1>
+      <div class = "section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Assets/skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Soft Skills</h3>
+              <p>Analytical thinking <br> Problem solving <br> Excelent communications skills. <br> Passionate about learning</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./Assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree from <br> California State University Northridge</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! my name is Damir, 
+              I am an aspiring Software Engineer specializing in creating efficient, user-based solutions. 
+              With a Bachelor’s degree in Computer Science from California State University Northridge, 
+              I have honed my skills in a range of programming languages and development methodologies.
+              In my personal projects I have used languages like Python, Java, JavaScript, C++, Prolog, etc. 
+              And I participated in group projects utilizing different development methodologies such as Agile.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="contact">
+      <p class="text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:damir.kozhamkulov2@gmail.com">damir.kozhamkulov2@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./Assets/LinkedIn Logo.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/damir-kozhamkulov/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-
-      <nav id = "hamburger-nav">
-        <div class = "logo">My Portfolio</div>
-        <div class = "hamburger-menu">
-          <div class = "hamburger-icon" onclick = "toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class = "menu-links">
-            <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
-            <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
-            <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
-            <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
-          </div>
-        </div>
-      </nav>
-
-      <section id = "profile">
-        <div class = "pic-container">
-          <img src = "./Assets/Little_Damir.png" alt = "Little Damir" />
-        </div>
-        <div class = "intro_box_1">
-          <h2 class = "text__p1">Hey, my name is</h2>
-          <h1 class = "title">Damir</h1>
-          <p>I am extremely passionate about learning, expanding my toolkit is my main priority, which is why I code on an every day basis.</p>
-          <p></p>
-          </div>
-        </div>
-    
-        <div class = "text">
-          <p class = "text__p1">.</p>
-          <h1 class = "title">.</h1>
-          <div class = "btn-container">
-            <button
-              class = "btn btn-color-2"
-              onclick = "window.open('./Assets/Damir_Kozhamkulov_Resume.pdf')"
-            >
-              My Resume
-            </button>
-            <button class = "btn btn-color-1" onclick = "location.href='./#contact'">
-              Contact Info
-            </button>
-          </div>
-          <div id = "socials-container">
-            <img
-              src = "./Assets/LinkedIn Logo.png"
-              alt = "My LinkedIn profile"
-              class = "icon"
-              onclick = "location.href='https://www.linkedin.com/in/damir-kozhamkulov/'"
-            />
-            <img
-              src = "./Assets/github.png"
-              alt = "My Github profile"
-              class = "icon"
-              onclick = "location.href = 'https://github.com/Damirchik11'"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id = "about">
-        <p class = "text__p1">Get To Know More</p>
-        <h1 class = "title">About Me</h1>
-        <div class = "section-container">
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img
-                  src="./Assets/skills.png"
-                  alt="Skills icon"
-                  class="icon"
-                />
-                <h3>Soft Skills</h3>
-                <p>Analytical thinking <br> Problem solving <br> Excelent communications skills. <br> Passionate about learning</p>
-              </div>
-              <div class="details-container">
-                <img
-                  src="./Assets/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>B.Sc. Bachelors Degree from <br> California State University Northridge</p>
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                Hello! my name is Damir, 
-                I am an aspiring Software Engineer specializing in creating efficient, user-based solutions. 
-                With a Bachelor’s degree in Computer Science from California State University Northridge, 
-                I have honed my skills in a range of programming languages and development methodologies.
-                In my personal projects I have used languages like Python, Java, JavaScript, C++, Prolog, etc. 
-                And I participated in group projects utilizing different development methodologies such as Agile.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./Assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-
-      <section id="contact">
-        <p class="text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./Assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:damir.kozhamkulov2@gmail.com">damir.kozhamkulov2@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./Assets/LinkedIn Logo.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/damir-kozhamkulov/">LinkedIn</a></p>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </footer>
-      <script src="script.js"></script>
-    </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
