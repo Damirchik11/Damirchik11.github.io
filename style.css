@@ -1,14 +1,3 @@
-/* Styling */
-
-
-/* --dark-moss-green: #606c38ff;
---pakistan-green: #283618ff;
---cornsilk: #fefae0ff;
---earth-yellow: #dda15eff;
---tigers-eye: #bc6c25ff; 
-*/
-
-
 /* Background color and box model */
 * {
   background-color: #777a7f;
@@ -23,15 +12,13 @@ body {
   overflow: scroll;
 }
 
-/* Container */
-.container {
-  width: 92%;
-  margin: auto;
-  height: 100%;
-  border: 2px solid;
+.site-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-/* Navigation */
+/* Top Navigation Bar*/
 #desktop-nav {
   font-family: 'Bebas Neue', sans-serif;
   background-color: rgba(204, 213, 174, 0.85);
@@ -42,13 +29,25 @@ body {
   left: 0;
   width: 100vw;
   z-index: 1000;
-  height: 11vh;
+  height: 10vh;
   min-height: 60px;
   backdrop-filter: blur(4px);
 }
 
+#desktop-nav .logo {
+  font-size: 10rem;
+  background-color: transparent;
+}
+#desktop-nav .logo:hover {
+  cursor: default;
+}
+#desktop-nav .nav-links li {
+  list-style: none;
+} 
+
 #profile {
   font-family: 'Roboto Condensed', sans-serif;
+   justify-content: flex-start;
 }
 
 #desktop-nav .nav-links li a {
@@ -62,8 +61,6 @@ body {
   background-color: rgba(204, 213, 174, 0.85) !important;
   backdrop-filter: blur(4px);
 }
-
-
 
 /* Scroll Behavior */
 html {
@@ -89,7 +86,8 @@ li {
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 2rem 2rem;
   align-items: center;
   height: 12vh;
   min-height: 60px;
@@ -111,16 +109,7 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #fefae0ff;
-}
-
-.logo {
-  font-size: 3rem;
-  background-color: transparent;
-}
-
-.logo:hover {
-  cursor: default;
-}
+} 
 
 /* HAMBURGER MENU */
 #hamburger-nav {
@@ -192,7 +181,7 @@ a:hover {
 /* SECTIONS */
 section {
   padding-top: 8vh; /* Increase if needed to match nav height */
-  height: 96vh;
+  height: auto;
   margin: 0 10rem;
   min-height: fit-content;
 }
@@ -215,9 +204,11 @@ section {
 
 .pic-container {
   display: flex;
-  height: 900px;
-  width: 800px;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin: auto 0;
+  margin-left: 0;
+  /* Remove any centering or large fixed width if present */
 }
 
 .text {
@@ -229,6 +220,7 @@ section {
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   align-self: flex-start;
   margin-top: 10vh;
+  max-width: 1500px;
 }
 
 .intro_box_1 {
@@ -473,5 +465,8 @@ footer p {
 
 .intro_box_1 * {
   background-color: transparent !important;
+  max-width: 1500px;
+  text-align: left;
+  
 }
 
