@@ -2,7 +2,7 @@
 
 /* Background color and box model */
 * {
-  background-color: #fde5cb;
+  background-color: #777a7f;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,6 +25,18 @@ body {
 /* Navigation */
 #desktop-nav {
   font-family: 'Bebas Neue', sans-serif;
+  background-color: rgba(204, 213, 174, 0.80);
+  border-top: 0.2rem solid #f2f2f2ff;
+  border-bottom: 0.2rem solid #f2f2f2ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  height: 10vh;
+  min-height: 60px;
+  backdrop-filter: blur(4px);
+  color: #14213d;
 }
 
 #profile {
@@ -48,6 +60,19 @@ a,
 }
 
 /* DESKTOP NAV */
+#desktop-nav .nav-links {
+  list-style: none;
+  background-color: rgba(204, 213, 174, 0.85) !important;
+  backdrop-filter: blur(4px);
+}
+
+#desktop-nav .nav-links li a {
+  display: block;
+  font-size: 2rem;
+  background-color: rgba(204, 213, 174, 0.85) !important;
+  backdrop-filter: blur(4px);
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -71,18 +96,20 @@ a {
 }
 
 a:hover {
-  color: dimgray;
+  color: #fefae0ff;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: #8458B3;
+  text-decoration-color: #fefae0ff;
 }
 
 .logo {
   font-size: 3rem;
+  background-color: transparent;
 }
 
 .logo:hover {
   cursor: default;
+  color: #fefae0ff;
 }
 
 /* HAMBURGER MENU */
@@ -235,15 +262,16 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #d0bdf4 0.2rem solid;
+  border: #e9edc9ff 0.2rem solid;
+  background-color: #e9edc9ff;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-  background-color: #e5eaf5;
-  color: #8458B3;
-  border: #a0d2eb 0.2rem solid;
+  background-color: #ccd5aeff;
+  color: #fefae0ff;
+  border: #fefae0ff 0.2rem solid;
 }
 
 /* ABOUT SECTION */
