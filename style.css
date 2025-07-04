@@ -79,10 +79,9 @@ a {
 }
 
 a:hover {
-  color: #fefae0ff;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: #fefae0ff;
+  text-decoration-color: #14213d;
 }
 
 .logo {
@@ -92,7 +91,6 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-  color: #fefae0ff;
 }
 
 /* HAMBURGER MENU */
@@ -162,6 +160,8 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+
+
 /* SECTIONS */
 section {
   padding-top: 4vh;
@@ -172,8 +172,6 @@ section {
 
 .section-container {
   display: flex;
-  gap: 4rem;
-  height: 80%;
 }
 
 /* PROFILE SECTION */
@@ -199,15 +197,14 @@ section {
 
 .text p {
   font-weight: 600;
-  text-decoration: dashed;
 }
 
-.text__p1 {
+.text_1 {
   text-align: center;
   color: #fefae0ff;
 }
 
-.text__p2 {
+.text_2 {
   text-align: center;
   color: #fefae0ff;
   font-size: 1.5rem;
@@ -223,7 +220,7 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   gap: 8rem;
 }
 
@@ -242,7 +239,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .btn {
