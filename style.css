@@ -182,6 +182,7 @@ section {
 }
 
 .pic-container {
+  padding-top: 2vh;
   display: flex;
   height: 700px;
   margin: auto 0;
@@ -192,22 +193,20 @@ section {
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 10vh;
-  max-width: 80%;
-}
-
-.text p {
-  font-weight: 600;
+  max-width: 40%;
 }
 
 .text_1 {
+  font-size: 3rem;
+  font-weight: 600;
   text-align: center;
   color: #fefae0ff;
 }
 
 .text_2 {
+  font-size: 2rem;
   text-align: center;
   color: #fefae0ff;
-  font-size: 1.5rem;
   margin-top: 1rem;
 }
 
