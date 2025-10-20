@@ -197,18 +197,19 @@ section {
 
 /* PROFILE SECTION */
 #profile {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  height: auto; /* Changed from 80vh */
-  min-height: 80vh; /* Added to maintain minimum height on desktop */
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 3rem;
+  align-items: center;
+  min-height: 85vh;
+  padding: 2rem 0;
 }
 
 .pic-container {
   display: flex;
   height: auto; /* Changed from 900px */
   width: 100%; /* Changed from 800px */
-  max-width: 400px; /* Added max-width for desktop */
+  max-width: 600px; /* Added max-width for desktop */
   aspect-ratio: 1 / 1; /* Added to maintain square shape */
   margin: auto 0;
   align-items: center; /* Added to center the image vertically */
@@ -250,18 +251,21 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin-top: 2rem;
+  gap: 2rem;
 }
 
 /* ICONS */
 .icon {
   cursor: pointer;
-  height: 2rem;
-  min-width: 44px; /* Added minimum touch target size */
-  min-height: 44px; /* Added minimum touch target size */
-  padding: 0.5rem; /* Added padding for larger touch area */
-  transition: transform 0.2s ease; /* Added animation */
+  height: 3.5rem;
+  width: 3.5rem;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0.75rem;
+  background-color: rgb(231, 248, 239); /* Add contrast */
+  border-radius: 50%; /* Make circular */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Add depth */
 }
 
 .icon:hover {
@@ -475,4 +479,73 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section {
+    margin: 0 5rem; /* Reduce side margins */
+  }
+
+  #profile {
+    gap: 3rem; /* Reduce gap */
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+  }
+
+  .pic-container {
+    max-width: 350px; /* Adjust image size */
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .nav-links {
+    font-size: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .icon {
+    height: 3rem; /* Scale up icons */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 2rem; /* Reduce from 10rem */
+    padding-top: 2vh;
+  }
+
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .pic-container {
+    max-width: 280px; /* Smaller for mobile */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .icon {
+    height: 2.5rem;
+  }
 }
