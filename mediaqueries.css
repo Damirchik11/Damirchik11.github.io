@@ -23,6 +23,11 @@
 
   #hamburger-nav {
     display: block;
+    padding: 0.5rem 1rem; /* Added padding for better spacing */
+  }
+
+  .hamburger-menu {
+    z-index: 1001; /* Ensure hamburger is above menu */
   }
 
   nav {
@@ -39,6 +44,13 @@
     border: 1px solid rgb(163, 163, 163);
     border-radius: 1rem;
     margin-top: 0.5rem;
+    right: -1rem; /* Align with screen edge */
+    min-width: 250px; /* Wider on mobile for better readability */
+  }
+
+  .menu-links a {
+    font-size: 1.3rem; /* Slightly smaller for mobile */
+    padding: 18px 24px; /* Larger touch targets on mobile */
   }
 
   /* Sections */
@@ -102,17 +114,21 @@
     margin: 0 auto;
     font-size: 0.9rem;
     padding: 0.8rem 1rem;
+    min-height: 48px; /* Larger touch target on mobile */
   }
 
-  /* Socials */
-  #socials-container {
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
+  /* Enhanced Touch Targets for Mobile */
   .icon {
-    width: 28px;
-    height: 28px;
+    min-width: 48px; /* Larger touch targets on mobile */
+    min-height: 48px;
+    padding: 0.75rem;
+  }
+
+  /* Ensure links are touch-friendly */
+  a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
 
   /* About Section */
@@ -201,6 +217,40 @@
     margin: 2rem 1rem;
     padding: 1rem 0;
   }
+
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Container adjustments */
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Text readability */
+  p {
+    line-height: 1.6; /* Improved readability */
+  }
+
+  /* Button accessibility */
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
 }
 
 /* ========================================
@@ -230,6 +280,12 @@
     border: 1px solid rgb(163, 163, 163);
     border-radius: 1rem;
     margin-top: 0.5rem;
+    min-width: 220px;
+  }
+
+  .menu-links a {
+    font-size: 1.4rem;
+    padding: 16px 22px;
   }
 
   /* Sections */
@@ -290,12 +346,15 @@
     min-width: 150px;
     font-size: 1rem;
     padding: 0.9rem 1.5rem;
+    min-height: 46px;
   }
 
   /* Icons */
   .icon {
     width: 32px;
     height: 32px;
+    min-width: 46px;
+    min-height: 46px;
   }
 
   /* About Section */
@@ -358,6 +417,22 @@
     height: auto;
     margin: 2rem 3rem;
   }
+
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ensure proper spacing */
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  /* Text readability */
+  p {
+    line-height: 1.7;
+  }
 }
 
 /* ========================================
@@ -378,6 +453,22 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  /* Ensure proper layout */
+  #profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .pic-container {
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
+
+  .text {
+    align-self: center;
   }
 }
 

@@ -6,12 +6,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Remove tap highlight on mobile */
 }
 
 /* Font */
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  overflow: scroll;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: scroll;
 }
 
 /* Container */
@@ -43,8 +45,11 @@ p {
 
 /* TRANSITION */
 a,
-.btn {
+.btn,
+.icon,
+.hamburger-icon span {
   transition: all 300ms ease;
+  will-change: transform; /* Optimize for animations */
 }
 
 /* DESKTOP NAV */
@@ -62,7 +67,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 a {
@@ -102,6 +107,10 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
+  padding: 8px; /* Added touch padding */
+  margin: -8px; /* Negative margin to maintain visual position */
+  min-width: 44px; /* Minimum touch target size */
+  min-height: 44px; /* Minimum touch target size */
 }
 
 .hamburger-icon span {
@@ -115,29 +124,48 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: #fde5cb; /* Changed from white to match theme */
   width: fit-content;
+  min-width: 200px; /* Added minimum width for better usability */
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
+  border-radius: 1rem; /* Added for consistency */
+  border: 1px solid rgb(163, 163, 163); /* Added border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  z-index: 1000; /* Ensure menu appears above other content */
 }
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 15px 20px; /* Increased from 10px for better touch targets */
   text-align: center;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  min-height: 44px; /* Minimum touch target size */
+  display: flex; /* Added for vertical centering */
+  align-items: center; /* Added for vertical centering */
+  justify-content: center; /* Added for horizontal centering */
+}
+
+.menu-links a:hover {
+  background-color: #e5eaf5; /* Added hover state */
+  color: #8458B3; /* Match button hover color */
 }
 
 .menu-links li {
   list-style: none;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2); /* Added separator */
+}
+
+.menu-links li:last-child {
+  border-bottom: none; /* Remove border from last item */
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 400px; /* Increased from 300px for more items */
 }
 
 .hamburger-icon.open span:first-child {
@@ -155,9 +183,10 @@ a:hover {
 /* SECTIONS */
 section {
   padding-top: 4vh;
-  height: auto; /* Changed from 96vh */
+  height: auto;
   margin: 0 10rem;
   min-height: fit-content;
+  box-sizing: border-box; /* Added for consistent sizing */
 }
 
 .section-container {
@@ -229,6 +258,18 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  min-width: 44px; /* Added minimum touch target size */
+  min-height: 44px; /* Added minimum touch target size */
+  padding: 0.5rem; /* Added padding for larger touch area */
+  transition: transform 0.2s ease; /* Added animation */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Added hover effect */
+}
+
+.icon:active {
+  transform: scale(0.95); /* Added active/press effect */
 }
 
 /* BUTTONS */
@@ -236,6 +277,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap; /* Added to prevent overflow on small screens */
 }
 
 .btn {
@@ -244,6 +286,13 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  min-height: 44px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Added for consistent sizing */
+  white-space: nowrap; /* Prevent text wrapping in buttons */
 }
 
 .btn-color-1,
@@ -262,8 +311,8 @@ section {
 /* ABOUT SECTION */
 #about {
   position: relative;
-  height: auto; /* Added to override section height */
-  min-height: 80vh; /* Added to maintain decent height on desktop */
+  height: auto;
+  min-height: 80vh;
 }
 
 .about-containers {
@@ -271,20 +320,21 @@ section {
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
-  flex-wrap: wrap; /* Added to allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  width: 100%; /* Added for better control */
+  width: 100%;
 }
 
 .about-pic {
   border-radius: 2rem;
-  max-width: 100%; /* Added to prevent overflow */
-  height: auto; /* Added to maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
+  display: block; /* Added to prevent inline spacing issues */
 }
 
 .arrow {
@@ -300,7 +350,8 @@ section {
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
-  min-width: 250px; /* Added to prevent containers from becoming too narrow */
+  min-width: 250px;
+  box-sizing: border-box; /* Added for consistent sizing */
 }
 
 /* EXPERIENCE SECTION */
@@ -346,21 +397,24 @@ article .icon {
 /* PROJECTS SECTION */
 #projects {
   position: relative;
-  height: auto; /* Added to override section height */
-  min-height: 80vh; /* Added for desktop */
+  height: auto;
+  min-height: 80vh;
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: #fde5cb;
+  box-sizing: border-box; /* Added for consistent sizing */
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: auto; /* Changed from 90% to maintain aspect ratio */
-  max-height: 300px; /* Added to prevent excessive height */
-  object-fit: cover; /* Added to maintain proper image display */
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block; /* Added to prevent inline spacing issues */
+  margin: 0 auto; /* Center the image */
 }
 
 .project-title {
@@ -387,7 +441,6 @@ article .icon {
   justify-content: center;
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
-  background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
