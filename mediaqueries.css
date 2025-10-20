@@ -1,257 +1,400 @@
-@media (min-width: 768px) {
-    body {
-      font-size: 200%;
-    }
-} 
-@media (max-width: 768px) {
-    body {
-      font-size: 90%; /* Reduce font size to 90% of original */
-    }
-  
-    h1, h2, h3, h4, h5, h6 {
-      font-size: 90%; /* Reduce heading size */
-    }
-  
-    .nav-links li a {
-      font-size: 0.9rem; /* Slightly smaller links */
-    }
-  
-    .title {
-      font-size: 2.5rem; /* Smaller titles for tablet */
-    }
-  
-    .text__p1 {
-      font-size: 1.1rem; /* Reduce the paragraph size */
-    }
-  
-    .icon {
-      width: 32px; /* Smaller icons for tablets */
-      height: 32px;
-    }
-  
-    .btn {
-      font-size: 0.9rem;
-      padding: 0.6rem 1.2rem;
-    }
-  
-    .section-container {
-      flex-direction: column; /* Stack elements vertically */
-    }
-  
-    .details-container {
-      width: 100%; /* Full width for each container */
-      margin-bottom: 20px; /* Add spacing between them */
-    }
-  }
-  
+/* ========================================
+   MOBILE-FIRST RESPONSIVE DESIGN
+   Base styles in style.css are for desktop (1025px+)
+   ======================================== */
 
-  @media (max-width: 480px) {
-    body {
-      font-size: 80%; /* Reduce font size to 80% of original */
-    }
-  
-    h1, h2, h3, h4, h5, h6 {
-      font-size: 80%; /* Reduce heading size */
-    }
-  
-    .nav-links li a {
-      font-size: 0.8rem; /* Smaller navigation links */
-    }
-  
-    .title {
-      font-size: 2rem; /* Smaller titles for mobile */
-    }
-  
-    .text__p1 {
-      font-size: 1rem; /* Even smaller paragraph text */
-    }
-  
-    .icon {
-      width: 24px; /* Icons become smaller */
-      height: 24px;
-    }
-  
-    .btn {
-      font-size: 0.8rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    #desktop-nav {
-      display: none; /* Desktop navigation stays hidden */
-    }
-  
-    #hamburger-nav {
-      display: block; /* Mobile navigation is visible */
-    }
-  
-    .section-container {
-      flex-direction: column; /* Stack all sections vertically */
-    }
-  
-    .details-container {
-      width: 100%; /* Full width */
-      margin-bottom: 15px; /* Add spacing */
-    }
-  
-    .btn-container {
-      display: flex;
-      flex-direction: column; /* Stack buttons */
-    }
-  
-    .btn {
-      margin-bottom: 10px; /* Add space between buttons */
-    }
-  }
-
-  /* ---------- Tablet Styles ---------- */
-@media (max-width: 1024px) {
+/* ========================================
+   SMALL MOBILE DEVICES (320px - 600px)
+   ======================================== */
+@media (max-width: 600px) {
+  /* Base Typography */
   body {
-    font-size: 95%;
+    font-size: 14px;
   }
-  .title {
-    font-size: 2.5rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2rem;
   }
-  .text__p1 {
-    font-size: 1.1rem;
+
+  /* Navigation */
+  #desktop-nav {
+    display: none;
   }
-  .icon {
-    width: 32px;
-    height: 32px;
+
+  #hamburger-nav {
+    display: block;
   }
-  .btn {
-    font-size: 0.95rem;
-    padding: 0.7rem 1.3rem;
+
+  nav {
+    height: auto;
+    padding: 1rem 0;
   }
-  .section-container,
-  .about-containers {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+
+  .logo {
+    font-size: 1.8rem;
   }
-  .pic-container {
-    width: 20vw;
-    max-width: 350px;
-    height: 40vw;
-    max-height: 500px;
+
+  .menu-links {
+    background-color: #fde5cb;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
   }
-  .text {
-    padding-right: 0;
+
+  /* Sections */
+  section {
+    margin: 0 1rem;
+    padding-top: 2vh;
+    height: auto;
+    min-height: auto;
   }
+
+  /* Profile Section */
   #profile {
     flex-direction: column;
     gap: 2rem;
     height: auto;
+    padding: 2rem 0;
   }
-}
 
-/* ---------- Mobile Styles ---------- */
-@media (max-width: 600px) {
-  body {
-    font-size: 85%;
+  .pic-container {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 90%;
+
+  .pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+
+  .text {
+    padding-right: 0;
+    text-align: center;
+  }
+
   .title {
     font-size: 2rem;
   }
+
   .text__p1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  .icon {
-    width: 24px;
-    height: 24px;
+
+  .text__p2 {
+    font-size: 1.3rem;
   }
-  .btn {
-    font-size: 0.85rem;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    margin-bottom: 10px;
-  }
+
+  /* Buttons */
   .btn-container {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0 1rem;
   }
-  nav {
-    height: auto;
-    flex-direction: column;
-    padding: 1rem 0;
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
   }
-  .logo {
-    font-size: 1.5rem;
-    padding: 0.5rem 0;
+
+  /* Socials */
+  #socials-container {
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
-  section {
-    margin: 0 0.5rem;
-    padding-top: 1vh;
-    height: auto;
+
+  .icon {
+    width: 28px;
+    height: 28px;
   }
-  .section-container,
+
+  /* About Section */
   .about-containers {
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  .pic-container {
-    width: 90vw;
-    max-width: 220px;
-    height: auto;
-  }
-  .text {
-    font-size: 1rem;
-  }
-  #socials-container {
-    gap: 0.5rem;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .details-container {
-    padding: 1rem;
+    padding: 1.2rem;
     width: 100%;
-    margin-bottom: 15px;
   }
+
+  .about-pic {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  /* Experience Section */
+  .experience-sub-title {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
   .article-container {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
   }
+
+  article {
+    width: 100%;
+    max-width: 200px;
+    gap: 0.8rem;
+  }
+
+  /* Projects Section */
+  .section-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .project-img {
     width: 100%;
     height: auto;
+    border-radius: 1.5rem;
   }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+  }
+
+  /* Contact Section */
   #contact {
     height: auto;
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
+
   .contact-info-upper-container {
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
   }
+
+  .contact-info-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  /* Footer */
   footer {
     height: auto;
-    margin: 1rem 0.5rem;
+    margin: 2rem 1rem;
+    padding: 1rem 0;
   }
 }
 
-/* ---------- Hamburger Menu Logic ---------- */
-@media (max-width: 925px) {
+/* ========================================
+   TABLET DEVICES (601px - 1024px)
+   ======================================== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Base Typography */
+  body {
+    font-size: 16px;
+  }
+
+  /* Navigation */
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: block;
   }
-  .nav-links {
-    display: none;
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .menu-links {
+    background-color: #fde5cb;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Sections */
+  section {
+    margin: 0 3rem;
+    padding-top: 3vh;
+    height: auto;
+  }
+
+  /* Profile Section */
+  #profile {
+    flex-direction: column;
+    gap: 3rem;
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .pic-container {
+    width: 60%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+  }
+
+  .pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text__p1 {
+    font-size: 1.1rem;
+  }
+
+  .text__p2 {
+    font-size: 1.6rem;
+  }
+
+  /* Buttons */
+  .btn-container {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .btn {
+    width: auto;
+    min-width: 150px;
+    font-size: 1rem;
+    padding: 0.9rem 1.5rem;
+  }
+
+  /* Icons */
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* About Section */
+  .about-containers {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .details-container {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .about-pic {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Experience Section */
+  .article-container {
+    gap: 2rem;
+    justify-content: space-around;
+  }
+
+  article {
+    width: auto;
+    min-width: 150px;
+  }
+
+  /* Projects Section */
+  .section-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .details-container {
+    width: calc(50% - 1rem);
+    min-width: 300px;
+  }
+
+  /* Contact Section */
+  #contact {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    margin: 2rem 3rem;
   }
 }
 
-/* Always hide hamburger nav on desktop */
-@media (min-width: 926px) {
+/* ========================================
+   DESKTOP DEVICES (1025px+)
+   ======================================== */
+@media (min-width: 1025px) {
+  /* Show desktop navigation */
+  #desktop-nav {
+    display: flex;
+  }
+
   #hamburger-nav {
     display: none;
   }
-  #desktop-nav {
-    display: flex;
+
+  /* Ensure profile section uses proper layout */
+  .pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* ========================================
+   LARGE DESKTOP (1440px+)
+   ======================================== */
+@media (min-width: 1440px) {
+  section {
+    margin: 0 12rem;
+  }
+
+  .pic-container {
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+  .title {
+    font-size: 3.5rem;
   }
 }

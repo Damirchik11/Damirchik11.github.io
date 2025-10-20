@@ -163,7 +163,7 @@ section {
 .section-container {
   display: flex;
   gap: 4rem;
-  height: 80%;
+  height: auto;
 }
 
 /* PROFILE SECTION */
