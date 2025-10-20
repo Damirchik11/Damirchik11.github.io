@@ -24,6 +24,7 @@
   #hamburger-nav {
     display: block;
     padding: 0.5rem 1rem; /* Added padding for better spacing */
+    
   }
 
   .hamburger-menu {
@@ -46,6 +47,7 @@
     margin-top: 0.5rem;
     right: -1rem; /* Align with screen edge */
     min-width: 250px; /* Wider on mobile for better readability */
+    
   }
 
   .menu-links a {
@@ -269,6 +271,7 @@
 
   #hamburger-nav {
     display: block;
+    margin-left: auto; /* Added to push menu to the right */
   }
 
   .logo {

@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-  color: dimgray;
+  color: #8458B3;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: #8458B3;
@@ -93,6 +93,10 @@ a:hover {
 /* HAMBURGER MENU */
 #hamburger-nav {
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 17vh;
+  padding: 0 2rem;
 }
 
 .hamburger-menu {
@@ -107,10 +111,10 @@ a:hover {
   height: 24px;
   width: 30px;
   cursor: pointer;
-  padding: 8px; /* Added touch padding */
-  margin: -8px; /* Negative margin to maintain visual position */
-  min-width: 44px; /* Minimum touch target size */
-  min-height: 44px; /* Minimum touch target size */
+  padding: 8px;
+  margin: -8px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .hamburger-icon span {
@@ -124,48 +128,47 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #fde5cb; /* Changed from white to match theme */
+  background-color: #fde5cb;
   width: fit-content;
-  min-width: 200px; /* Added minimum width for better usability */
+  min-width: 200px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  border-radius: 1rem; /* Added for consistency */
-  border: 1px solid rgb(163, 163, 163); /* Added border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
-  z-index: 1000; /* Ensure menu appears above other content */
+  border-radius: 1rem;
+  border: 1px solid rgb(163, 163, 163);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .menu-links a {
-  display: block;
-  padding: 15px 20px; /* Increased from 10px for better touch targets */
+  display: flex;
+  padding: 15px 20px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  min-height: 44px; /* Minimum touch target size */
-  display: flex; /* Added for vertical centering */
-  align-items: center; /* Added for vertical centering */
-  justify-content: center; /* Added for horizontal centering */
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-links a:hover {
-  background-color: #e5eaf5; /* Added hover state */
-  color: #8458B3; /* Match button hover color */
+  background-color: #e5eaf5;
+  color: #8458B3;
 }
 
 .menu-links li {
   list-style: none;
-  border-bottom: 1px solid rgba(163, 163, 163, 0.2); /* Added separator */
+  border-bottom: 1px solid rgba(163, 163, 163, 0.2);
 }
 
 .menu-links li:last-child {
-  border-bottom: none; /* Remove border from last item */
+  border-bottom: none;
 }
 
 .menu-links.open {
-  max-height: 400px; /* Increased from 300px for more items */
+  max-height: 400px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -186,7 +189,7 @@ section {
   height: auto;
   margin: 0 10rem;
   min-height: fit-content;
-  box-sizing: border-box; /* Added for consistent sizing */
+  box-sizing: border-box;
 }
 
 .section-container {
@@ -207,27 +210,27 @@ section {
 
 .pic-container {
   display: flex;
-  height: auto; /* Changed from 900px */
-  width: 100%; /* Changed from 800px */
-  max-width: 600px; /* Added max-width for desktop */
-  aspect-ratio: 1 / 1; /* Added to maintain square shape */
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
   margin: auto 0;
-  align-items: center; /* Added to center the image vertically */
-  justify-content: center; /* Added to center the image horizontally */
+  align-items: center;
+  justify-content: center;
 }
 
 .pic-container img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Changed from 'cover' to 'contain' - shows entire image */
+  object-fit: contain;
   border-radius: 2rem;
 }
 
 .text {
   align-self: center;
   text-align: center;
-  padding-right: 0; /* Removed padding-right: 350px */
-  max-width: 600px; /* Added to prevent text stretching too wide */
+  padding-right: 0;
+  max-width: 600px;
 }
 
 .text p {
@@ -239,7 +242,7 @@ section {
 }
 
 .text__p2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -263,17 +266,17 @@ section {
   min-width: 48px;
   min-height: 48px;
   padding: 0.75rem;
-  background-color: rgb(231, 248, 239); /* Add contrast */
-  border-radius: 50%; /* Make circular */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Add depth */
+  background-color: #d0bdf4;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .icon:hover {
-  transform: scale(1.1); /* Added hover effect */
+  transform: scale(1.1);
 }
 
 .icon:active {
-  transform: scale(0.95); /* Added active/press effect */
+  transform: scale(0.95);
 }
 
 /* BUTTONS */
@@ -281,7 +284,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap; /* Added to prevent overflow on small screens */
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -295,8 +298,8 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; /* Added for consistent sizing */
-  white-space: nowrap; /* Prevent text wrapping in buttons */
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .btn-color-1,
@@ -338,7 +341,7 @@ section {
   border-radius: 2rem;
   max-width: 100%;
   height: auto;
-  display: block; /* Added to prevent inline spacing issues */
+  display: block;
 }
 
 .arrow {
@@ -355,20 +358,20 @@ section {
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
   min-width: 250px;
-  box-sizing: border-box; /* Added for consistent sizing */
+  box-sizing: border-box;
 }
 
 /* EXPERIENCE SECTION */
 #experience {
   position: relative;
-  height: auto; /* Added to override section height */
-  min-height: 70vh; /* Added for desktop */
+  height: auto;
+  min-height: 70vh;
 }
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.5rem; /* Changed from 0.5rem - this was likely a typo */
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -408,7 +411,7 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: #fde5cb;
-  box-sizing: border-box; /* Added for consistent sizing */
+  box-sizing: border-box;
 }
 
 .project-img {
@@ -417,8 +420,8 @@ article .icon {
   height: auto;
   max-height: 300px;
   object-fit: cover;
-  display: block; /* Added to prevent inline spacing issues */
-  margin: 0 auto; /* Center the image */
+  display: block;
+  margin: 0 auto;
 }
 
 .project-title {
@@ -436,8 +439,8 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: auto; /* Changed from 70vh */
-  min-height: 50vh; /* Added for desktop */
+  height: auto;
+  min-height: 50vh;
 }
 
 .contact-info-upper-container {
@@ -471,81 +474,12 @@ article .icon {
 
 /* FOOTER SECTION */
 footer {
-  height: auto; /* Changed from 26vh */
-  min-height: 15vh; /* Added for desktop */
+  height: auto;
+  min-height: 15vh;
   margin: 0 1rem;
-  padding: 2rem 0; /* Added padding for better spacing */
+  padding: 2rem 0;
 }
 
 footer p {
   text-align: center;
-}
-
-/* Media Queries */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  section {
-    margin: 0 5rem; /* Reduce side margins */
-  }
-
-  #profile {
-    gap: 3rem; /* Reduce gap */
-    flex-direction: column; /* Stack vertically */
-    align-items: center;
-  }
-
-  .pic-container {
-    max-width: 350px; /* Adjust image size */
-  }
-
-  .text {
-    max-width: 100%;
-  }
-
-  .title {
-    font-size: 3.5rem;
-  }
-
-  .nav-links {
-    font-size: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .icon {
-    height: 3rem; /* Scale up icons */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section {
-    margin: 0 2rem; /* Reduce from 10rem */
-    padding-top: 2vh;
-  }
-
-  #profile {
-    flex-direction: column;
-    gap: 2rem;
-    min-height: auto;
-    padding: 2rem 0;
-  }
-
-  .pic-container {
-    max-width: 280px; /* Smaller for mobile */
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .text__p2 {
-    font-size: 1.25rem;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .icon {
-    height: 2.5rem;
-  }
 }
