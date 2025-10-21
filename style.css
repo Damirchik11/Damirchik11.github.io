@@ -2,7 +2,7 @@
 
 /* Background color and box model */
 * {
-  background-color: #fde5cb;
+  background-color: #ECF2FF;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -93,7 +93,7 @@ a:hover {
 /* HAMBURGER MENU */
 #hamburger-nav {
   display: none;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 17vh;
   padding: 0 2rem;
@@ -128,7 +128,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #fde5cb;
+  background-color: #ECF2FF;
   width: fit-content;
   min-width: 200px;
   max-height: 0;
@@ -353,7 +353,7 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #fde5cb;
+  background: #ECF2FF;
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
@@ -410,7 +410,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: #fde5cb;
+  background: #ECF2FF;
   box-sizing: border-box;
 }
 
