@@ -355,7 +355,7 @@ section {
   flex: 1;
   background: #ECF2FF;
   border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.1rem solid;
+  border: rgb(163, 163, 163) 0.3rem solid;
   text-align: center;
   min-width: 250px;
   box-sizing: border-box;
