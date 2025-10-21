@@ -501,4 +501,39 @@
   .h3 {
     font-size: 3rem;
   }
+
+  .text {
+    max-width: 700px;
+    border-radius: 2rem;
+    border: rgb(163, 163, 163) 0.3rem solid;
+    box-sizing: border-box;
+    padding: 2.5rem;
+  }
+
+  #desktop-nav {
+  padding-left: 2rem;
+  }
+
+  nav,
+  .nav-links {
+    display: flex;
+    padding-left: 10rem;
+  }
+
+  a { 
+    font-size: 4rem;
+  }
+
+  .logo {
+    font-size: 5rem;
+  }
+
+  .pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+
+  }
+
 }
