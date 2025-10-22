@@ -498,10 +498,6 @@
     font-size: 1.5rem;
   }
 
-  .h3 {
-    font-size: 3rem;
-  }
-
   .text {
     max-width: 700px;
     box-sizing: border-box;
@@ -551,9 +547,7 @@
     height: 8rem;
   }
 
-  #details-containers  {
-    height: 1.5rem;
-    width: 1.5rem;
+  .about-containers .h3 {
+    font-size: 2.5rem;
   }
-  
 }
