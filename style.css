@@ -305,7 +305,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #d0bdf4 0.2rem solid;
+  border: #d0bdf4 0.4rem solid;
 }
 
 .btn-color-1:hover,
@@ -313,7 +313,7 @@ section {
   cursor: pointer;
   background-color: #e5eaf5;
   color: #8458B3;
-  border: #a0d2eb 0.2rem solid;
+  border: #a0d2eb 0.4rem solid;
 }
 
 /* ABOUT SECTION */
@@ -356,7 +356,18 @@ section {
   flex: 1;
   background: #ECF2FF;
   border-radius: 2rem;
-  border: rgb(163, 163, 163) 0.3rem solid;
+  border: rgb(163, 163, 163) 0.4rem solid;
+  text-align: center;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.details-container-2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: #ECF2FF;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.4rem solid;
   text-align: center;
   min-width: 250px;
   box-sizing: border-box;
