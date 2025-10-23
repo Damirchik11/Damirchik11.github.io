@@ -11,9 +11,34 @@
 
 /* Font */
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Aldrich", sans-serif;
   overflow-x: hidden; /* Prevent horizontal scroll */
   overflow-y: scroll;
+}
+
+body,
+p, h1, h2, h3, h4, h5, h6 {
+  cursor: default; /* force arrow instead of I-beam on text */
+}
+
+/* Disable text selection where typing is not expected */
+#desktop-nav,
+.nav-links,
+#hamburger-nav,
+.logo,
+#socials-container img,
+.icon,
+.btn,
+.hamburger-icon,
+.text {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Keep pointer on interactive elements */
+a, button, .btn, .hamburger-icon, #socials-container img, .icon {
+  cursor: pointer;
 }
 
 .aldrich-regular {
@@ -315,6 +340,20 @@ section {
   color: #8458B3;
   border: #a0d2eb 0.4rem solid;
 }
+
+.btn-container .btn.btn-color-1,
+.btn-container .btn.btn-color-2 {
+  background-color: #c9b6f5;   /* slightly darker purple */
+  border-color: #b59ef0;       /* harmonized border */
+}
+
+.btn-container .btn.btn-color-1:hover,
+.btn-container .btn.btn-color-2:hover {
+  background-color: #b99ff2;   /* a touch darker on hover */
+  border-color: #a787ea;
+  color: #fff;
+}
+
 
 /* ABOUT SECTION */
 #about {

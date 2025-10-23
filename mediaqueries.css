@@ -556,6 +556,10 @@
     width: 4rem;
   }
 
+  #about .about-details-container :is(.details-container, .details-container-2) .p {
+    font-family: "Aldrich", sans-serif;
+  }
+
   .about-containers .h3 {
     font-size: 2.5rem;
   }
