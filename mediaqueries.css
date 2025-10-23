@@ -498,6 +498,8 @@
     font-size: 1.5rem;
   }
 
+
+
   .text {
     max-width: 700px;
     box-sizing: border-box;
@@ -506,12 +508,12 @@
   }
 
   .text__p1 {
-    font-size: 2.5rem;
+    font-size: rem;
   }
 
   .text .icon {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
 
   #desktop-nav {
@@ -543,11 +545,18 @@
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1.5rem;
-    width: 20rem;
+    width: 50rem;
     height: 8rem;
   }
 
-  .about-containers .h3 {
-    font-size: 2.5rem;
+  #about .about-details-container :is(.details-container, .details-container-2) > h3 {
+    font-size: 2.25rem;
   }
+
+  #about .about-details-container :is(.details-container, .details-container-2) .icon {
+    height: 4rem;
+    width: 4rem;
+  }
+
+
 }
