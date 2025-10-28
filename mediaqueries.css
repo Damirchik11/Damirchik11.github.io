@@ -506,7 +506,7 @@
   }
 
   .text__p1 {
-    font-size: rem;
+    font-size: 2.5rem;
   }
 
   .text .icon {
@@ -547,21 +547,29 @@
     height: 8rem;
   }
 
+  /* About section Titles */
   #about .about-details-container :is(.details-container, .details-container-2) > h3 {
     font-size: 2.25rem;
   }
 
+  /* About section Icons */
   #about .about-details-container :is(.details-container, .details-container-2) .icon {
     height: 4rem;
     width: 4rem;
   }
 
-  #about .about-details-container :is(.details-container, .details-container-2) .p {
-    font-family: "Aldrich", sans-serif;
+  /* About section Text */
+  #about .about-details-container :is(.details-container, .details-container-2) p {
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
-  .about-containers .h3 {
-    font-size: 2.5rem;
+  #about .about-details-container :is(.details-container-2) p {
+    font-size: 2rem;
+
+  }
+
+  .about-containers h3 {
+    font-size: 1.5rem;
   }
   
 

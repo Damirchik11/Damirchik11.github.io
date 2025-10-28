@@ -331,6 +331,7 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: #d0bdf4 0.4rem solid;
+  background-color: #dad3fc;
 }
 
 .btn-color-1:hover,
@@ -341,18 +342,6 @@ section {
   border: #a0d2eb 0.4rem solid;
 }
 
-.btn-container .btn.btn-color-1,
-.btn-container .btn.btn-color-2 {
-  background-color: #c9b6f5;   /* slightly darker purple */
-  border-color: #b59ef0;       /* harmonized border */
-}
-
-.btn-container .btn.btn-color-1:hover,
-.btn-container .btn.btn-color-2:hover {
-  background-color: #b99ff2;   /* a touch darker on hover */
-  border-color: #a787ea;
-  color: #fff;
-}
 
 
 /* ABOUT SECTION */
