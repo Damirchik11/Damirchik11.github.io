@@ -563,14 +563,13 @@
     font-family: 'Roboto Condensed', sans-serif;
   }
 
-  #about .about-details-container :is(.details-container-2) p {
-    font-size: 2rem;
-
-  }
-
   .about-containers h3 {
     font-size: 1.5rem;
   }
   
+  #experience .experience-details-container .details-container {
+  min-height: 400px; /* Set minimum height */
+  height: auto; /* Allow content to expand if needed */
+}
 
 }

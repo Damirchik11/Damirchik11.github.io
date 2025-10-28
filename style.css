@@ -71,7 +71,7 @@ html {
 
 /* Text color */
 p {
-  color: rgb(75, 75, 75);
+  color: #2a0b4bfd;
 }
 
 /* TRANSITION */
@@ -409,7 +409,7 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: #2a0b4bfd;
   font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 2rem;
