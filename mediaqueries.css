@@ -567,9 +567,27 @@
     font-size: 1.5rem;
   }
   
+  /* Experience Section */
   #experience .experience-details-container .details-container {
-  min-height: 400px; /* Set minimum height */
-  height: auto; /* Allow content to expand if needed */
-}
+    min-height: 500px;
+  }
+  
+  /* Experience icon sizes left container*/
+  #experience .experience-details-container .details-container .icon{
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* Experience text sizes right container*/
+  #experience .experience-details-container .details-container-2 .icon{
+    height: 2rem;
+    width: 2rem;
+  }
+
+  /* Experience icon sizes */
+  #experience .experience-details-container .details-container-2 p{
+    font-size: 1rem;
+  }
+
 
 }
