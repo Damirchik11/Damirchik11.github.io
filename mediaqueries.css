@@ -515,7 +515,7 @@
   }
 
   #desktop-nav {
-  padding-left: 2rem;
+    padding-left: 2rem;
   }
 
   nav,
@@ -529,7 +529,7 @@
   }
 
   .logo {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   .pic-container img {
@@ -545,6 +545,11 @@
     padding: 1.5rem;
     width: 50rem;
     height: 8rem;
+  }
+
+  /* My Resume and Contact Info Buttons */
+  .text .btn-container .btn {
+    font-size: 2rem;
   }
 
   /* About section Titles */
@@ -563,11 +568,19 @@
     font-family: 'Roboto Condensed', sans-serif;
   }
 
+  /* Education Text */
+  #about .about-details-container :is(.details-container-2) p {
+    font-size: 1.8rem;
+  }
+  
+  /* ------------------------------------------------------------------------------------------------------------------- */
+  /* Experience Section */
+  /* Experience Section Titles */
   .about-containers h3 {
     font-size: 1.5rem;
   }
-  
-  /* Experience Section */
+
+  /* Experience Details Container */
   #experience .experience-details-container .details-container {
     min-height: 500px;
   }
@@ -588,6 +601,8 @@
   #experience .experience-details-container .details-container-2 p{
     font-size: 1rem;
   }
+
+  
 
 
 }

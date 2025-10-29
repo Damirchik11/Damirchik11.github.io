@@ -332,6 +332,7 @@ section {
 .btn-color-2 {
   border: #d0bdf4 0.4rem solid;
   background-color: #dad3fc;
+  font-family: "Aldrich", sans-serif;
 }
 
 .btn-color-1:hover,
