@@ -599,12 +599,14 @@
   #experience .experience-details-container .details-container .icon{
     height: 4rem;
     width: 4rem;
+    padding: 0.25rem;
   }
 
   /* Experience text sizes right container*/
   #experience .experience-details-container .details-container-2 .icon{
     height: 2rem;
     width: 2rem;
+    padding: 0.25rem;
   }
 
   /* Experience icon sizes */

@@ -291,7 +291,7 @@ section {
   width: 3.5rem;
   min-width: 48px;
   min-height: 48px;
-  padding: 0.75rem;
+  padding: 0.5rem;
   background-color: #d0bdf4;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -428,7 +428,8 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* Arrangement for experience articles */
@@ -461,8 +462,9 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: center;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 article .icon {
