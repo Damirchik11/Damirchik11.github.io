@@ -431,6 +431,33 @@ section {
   justify-content: space-around;
 }
 
+/* Arrangement for experience articles */
+.article-container-experience {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.article-container-experience article {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.article-container-experience article > div {
+  flex: 1;
+  width: 100%;
+}
+
+.article-container-experience article h3,
+.article-container-experience article p {
+  width: 100%;
+}
+
 article {
   display: flex;
   width: 10rem;
