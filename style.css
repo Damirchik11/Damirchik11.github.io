@@ -427,7 +427,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 4rem;
   justify-content: center;
   align-items: flex-start;
 }
@@ -457,6 +457,7 @@ section {
 .article-container-experience article h3,
 .article-container-experience article p {
   width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 article {
