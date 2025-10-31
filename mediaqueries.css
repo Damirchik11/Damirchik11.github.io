@@ -75,6 +75,7 @@
     display: flex;
     height: auto;
     width: 100%;
+    min-width: 200px;
     max-width: 600px;
     aspect-ratio: 1 / 1;
     margin: auto 0;
@@ -167,15 +168,15 @@
     margin-bottom: 1.5rem;
   }
 
+  /* Experience Section */
   .article-container {
-    gap: 1.5rem;
-    justify-content: center;
+    gap: 2rem;
+    justify-content: space-around;
   }
 
   article {
-    width: 100%;
-    max-width: 200px;
-    gap: 0.8rem;
+    width: auto;
+    min-width: 150px;
   }
 
   /* Projects Section */
@@ -328,18 +329,21 @@
     padding: 3rem 0;
   }
 
+  /* Ensure profile picture container size */
   .pic-container {
-    width: 60%;
-    max-width: 450px;
+    max-width: 500px;
+    min-width: 300px;
     height: auto;
     aspect-ratio: 1 / 1;
     margin: 0 auto;
   }
 
+  /* Ensure profile section uses proper layout */
   .pic-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    padding: 0;
   }
 
   .text {
@@ -380,6 +384,10 @@
     height: 32px;
     min-width: 46px;
     min-height: 46px;
+  }
+
+  .arrow {
+    display: none;
   }
 
   /* About Section */
@@ -512,7 +520,7 @@
 /* ========================================
    DESKTOP DEVICES (1025px+)
    ======================================== */
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   /* Show desktop navigation */
   #desktop-nav {
     display: flex;
@@ -741,7 +749,7 @@
 /* ========================================
    INTERMEDIATE DESKTOP DEVICES (1204px+)
    ======================================== */
-@media (max-width: 1204px) {
+@media (min-width: 1025px) and (max-width: 1204px) {
   nav,
   .nav-links {
     display: flex;
